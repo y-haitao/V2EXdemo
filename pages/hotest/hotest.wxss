@@ -1,0 +1,15 @@
+/* pages/hotest/hotest.wxss */
+@import '../index/index.wxss';
+
+/* 暂无更多 */
+.hasNoMore{
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+}
+
+.noMore_text{
+    font-size: 28rpx;
+    line-height: 100rpx;
+    color: #999999;
+}

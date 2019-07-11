@@ -1,0 +1,9 @@
+<!--pages/allClassify/allClassify.wxml-->
+<view class="container">
+    <!-- 全部节点标题 -->
+    <view class="allNode">{{title}}</view>
+    <!-- 全部节点类别 -->
+    <view class="allClassify">
+        <text class="allClassify_btn" wx:for="{{allNodes}}" wx:key="{{index}}" id="{{item.id}}" data-name="{{item.title}}" bind:tap="jumpDetail">{{item.title}}</text>
+    </view>
+</view>

@@ -1,0 +1,73 @@
+<!--pages/comDetail/comDetail.wxml-->
+<view class="container">
+    <!-- 主题 -->
+    <view class="theme_content">
+        <!-- 用户头像、名字、日期、类别 -->
+        <view class="theme_top">
+            <!-- 头像 -->
+            <image class="top_img" src="{{theme.member.avatar_normal}}" />
+            <view class="top_con">
+                <!-- 名字 -->
+                <view class="con_info">
+                    <text class="info_username">{{theme.member.username}}</text>
+                </view>
+                <!-- 日期 -->
+                <view class="con_time">
+                    <text class="time">{{theme.created}}</text>
+                </view>
+            </view>
+            <!-- 类别 -->
+            <view class="top_sort">
+                <text class="sort_title">{{theme.node.title}}</text>
+            </view>
+        </view>
+        <!-- 主题标题 -->
+        <view class="theme_middle">
+            <text class="middle_text">{{theme.title}}</text>
+        </view>
+        <!-- 主题内容 -->
+        <view class="theme_bottom">
+            <text class="bottom_text">{{theme.content}}</text>
+        </view>
+    </view>
+    <!-- 回复 -->
+    <view class="replies_content">
+        <!-- 回复量、时间 -->
+        <view class="replies_top">
+            <view class="replies_topLeft">
+                <text class="replies_top_d">直到：</text>
+                <text class="replies_top_date">{{newRepliesDate}}</text>
+            </view>
+            <view class="replies_topRight">
+                <text class="replies_top_t">回复：</text>
+                <text class="replies_top_text">{{theme.replies}}</text>
+            </view>
+        </view>
+        <!-- 回复楼层 -->
+        <view class="replies_bottom" wx:for="{{replies}}" wx:key="{{index}}">
+            <!-- 楼层头像、名字、日期 -->
+            <view class="floor">
+                <!-- 楼层头像 -->
+                <image class="floor_img" src="{{item.member.avatar_normal}}" />
+                <view class="floor_con">
+                    <!-- 名字 -->
+                    <view class="floor_info">
+                        <text class="floor_username">{{item.member.username}}</text>
+                    </view>
+                    <!-- 日期 -->
+                    <view class="floor_date">
+                        <view class="floor_time">{{item.created}}</view>
+                    </view>
+                </view>
+                <!-- 楼主回复 -->
+                <view class="floor_replies">
+                    <text class="replies_text">{{item.content}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 暂无更多 -->
+    <view class="hasNoMore">
+        <text class="noMore_text">- 暂无更多 -</text>
+    </view>
+</view>

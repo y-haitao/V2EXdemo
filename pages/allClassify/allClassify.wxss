@@ -1,0 +1,30 @@
+/* pages/allClassify/allClassify.wxss */
+.allNode{
+    width: 100%;
+    height: 60rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    line-height: 60rpx;
+    color: #777777;
+    background-color: #ffffff;
+    text-align: left;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+    border-bottom: 4rpx #E2E2E2 solid;
+}
+
+.allClassify{
+    padding: 30rpx 30rpx 100rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.allClassify_btn{
+    font-size: 24rpx;
+    color: #778087;
+    padding: 10rpx 30rpx;
+    box-sizing: border-box;
+    margin: 0rpx 20rpx 20rpx 0rpx;
+    border-radius: 24rpx;
+    border: 2rpx #e5e5e5 solid;
+    display: inline-block;  
+}

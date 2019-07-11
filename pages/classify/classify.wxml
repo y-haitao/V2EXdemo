@@ -1,0 +1,16 @@
+<!--pages/classify/classify.wxml-->
+<view class="container">
+    <!-- 节点分类 -->
+    <view class="nodeClassify" wx:for="{{newNodeArray}}" wx:key="{{index}}">
+        <!-- 标题 -->
+        <view class="node_title">{{item.parent_node_name}}</view>
+        <!-- 节点内容 -->
+        <view class="node_content">
+            <text class="content_text" wx:for="{{item.childNode}}" wx:for-item="childNode" wx:key="{{index}}" id="{{childNode.id}}" data-name="{{childNode.title}}" bind:tap="jumpDetail">{{childNode.title}}</text>
+        </view>
+    </view>
+    <!-- 点击查看全部 -->
+    <view class="allNode">
+        <view class="allNode_btn" bind:tap="jumpAllClassify">点击查看全部节点>></view>
+    </view>
+</view>

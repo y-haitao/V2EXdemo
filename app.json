@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/hotest/hotest",
+    "pages/classify/classify",
+    "pages/comDetail/comDetail",
+    "pages/allClassify/allClassify",
+    "pages/topicsDetail/topicsDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "V2EX 练习demo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#3498DB",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最新",
+        "iconPath": "images/latest.png",
+        "selectedIconPath": "images/latest_on.png"
+      },
+      {
+        "pagePath": "pages/hotest/hotest",
+        "text": "热门",
+        "iconPath": "images/hotest.png",
+        "selectedIconPath": "images/hotest_on.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "节点",
+        "iconPath": "images/classify.png",
+        "selectedIconPath": "images/classify_on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,48 @@
+/* pages/classify/classify.wxss */
+.nodeClassify{
+    width: 100%;
+    height: 100%;
+}
+
+/* 标题 */
+.node_title{
+    width: 100%;
+    height: 60rpx;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    font-weight: 700;
+    color: #777777;
+    text-align: left;
+    background-color: #e5e5e5;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+
+/* 节点内容 */
+.node_content{
+    padding: 20rpx 30rpx 4rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.node_content .content_text{
+    font-size: 24rpx;
+    color: #778087;
+    padding: 6rpx 20rpx;
+    box-sizing: border-box;
+    margin: 0rpx 16rpx 16rpx 0rpx;
+    border-radius: 24rpx;
+    border: 2rpx #e5e5e5 solid;
+    display: inline-block;  
+}
+
+/* 点击查看全部节点 */
+.allNode{
+    width: 100%;
+    height: 80rpx;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    color: #777777;
+    font-weight: bold;
+    text-align: center;
+    background-color: #e5e5e5;
+}

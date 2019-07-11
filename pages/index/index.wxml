@@ -1,0 +1,42 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+    <!-- 今日最新主题 -->
+    <view class="theme">{{title}}</view>
+    <view class="latest" wx:for="{{latest}}" wx:key="{{index}}">
+        <view class="latest_item" id="{{item.id}}" bind:tap="jumpDetail">
+            <view class="latest_top">
+                <!-- 用户的头像 -->
+                <image class="latest_img" wx:if="{{item.member.avatar_normal}}" src="{{item.member.avatar_normal}}" />
+                <view class="latest_con">
+                    <!-- 用户的信息、类别 -->
+                    <view class="latest_info">
+                        <text class="info_title">{{item.node.title}}</text>
+                        <text class="info_dot">·</text>
+                        <text class="info_username">{{item.member.username}}</text>
+                    </view>
+                    <!-- 时间 -->
+                    <view class="latest_time">
+                        <text class="time">{{item.created}}</text>
+                    </view>
+                </view>
+                <!-- 右上角回复量 -->
+                <view class="replies_num">
+                    <text class="replies_text">{{item.replies}}</text>
+                </view>
+            </view>
+            <view class="latest_bottom">
+                <!-- 话题 -->
+                <text class="latest_title">{{item.title}}</text>
+                <!-- 最后回复 -->
+                <view class="latest_reply">
+                    <text class="reply_text">最后回复来自：</text>
+                    <text class="reply_name">{{item.last_modified}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 暂无更多 -->
+    <view class="hasNoMore">
+        <text class="noMore_text">- 暂无更多 -</text>
+    </view>
+</view>
